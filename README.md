@@ -5,8 +5,8 @@ Clojure Project - Calculadora de Calorias
 
 ## Estrutura
 
-- `calorias-cli/` -> Front-end (template app, roda no terminal)
-- `calorias-api/` -> Back-end  (template compojure, sobe um servidor)
+- `cliente/` -> Front-end (template app, roda no terminal)
+- `server/` -> Back-end  (template compojure, sobe um servidor)
 
 ---
 
@@ -35,14 +35,14 @@ API-NINJAS precisa de chave, Sem ela o registro de exercicio sempre retorna erro
 
 1. Abrir um terminal e subir o server:
    ```
-   cd calorias-api
+   cd server
    lein ring server
    ```
    (está indo para: http://localhost:3000)
 
 2. Abrir outro terminal e rodar o cliente:
    ```
-   cd calorias-cli
+   cd cliente
    lein run
    ```
 
