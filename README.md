@@ -6,18 +6,15 @@ Clojure Project - Calculadora de Calorias
 ## Estrutura
 
 - `cliente/` -> Front-end (template app, roda no terminal)
-- `server/` -> Back-end  (template compojure, sobe um servidor)
+- `server/` -> Back-end  (template compojure, sobe um servidor (que também precisa do terminal para abrir))
 
 ---
 
 ## API:
 
-- Chave da api-ninjas (a minha, sem problema usar):
+- Chave da api-ninjas (a minha, sem problema usar): yckoTzqL0NrcBRIUvGtQ9URIWMVuYUFUsMVRC3tZ
 - Para exercicios: https://api-ninjas.com/api/caloriesburned
 - Para comidas:    https://world.openfoodfacts.org/cgi/search.pl?search_terms=
-
-API-NINJAS precisa de chave, Sem ela o registro de exercicio sempre retorna erro 422
-(atividade nao encontrada), porque a API-NINJAS responde 401.
 
 ---
 
@@ -27,7 +24,6 @@ API-NINJAS precisa de chave, Sem ela o registro de exercicio sempre retorna erro
 - `lein new compojure server`   -> cria um template no estilo servidor (compojure)
 - `lein run`                    -> roda o Cliente (APP)
 - `lein ring server`            -> roda o Server (Compojure), com browser
-- `lein ring server-headless`   -> roda o Server sem abrir o browser
 
 ---
 
@@ -55,10 +51,10 @@ API-NINJAS precisa de chave, Sem ela o registro de exercicio sempre retorna erro
 
 ---
 
-## Lembretes / coisas pra nao esquecer
+## Coisas pra nao esquecer
 
 - Server precisa estar de ligado ANTES de rodar o cliente
 - Nomes de exercicio funcionam em ingles (running, swimming, cycling, push up, squat...)
 - Nomes de comida em portugues normalmente funcionam bem no Open Food Facts (arroz, feijao, frango, banana...)
-- Datas sempre no formato AAAA-MM-DD.
+- Datas sempre no formato AAAA-MM-DD
 - Se reiniciar o server, perde tudo (dados ficam so em memoria/atom)
